@@ -11,7 +11,7 @@ async def find_place(client, query, input_type, fields=None,
 
 
 async def places(client, query, location=None, radius=None, language=None,
-                 min_price=None, max_price=None, open_now=False, type=None,
+                 min_price=0, max_price=4, open_now=False, type=None,
                  page_token=None):
 
     return await googlemaps.places.places(
